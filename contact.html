@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contactstyle.css" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="img/logo.jpeg" alt="">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">AGrow</span>
+          <!-- <span class="profession"></span> -->
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="home.html">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">Hire Farmer</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="equipment.html">
+              <i class='bx bx-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">Equipment</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="forcast.html">
+              <i class='bx bx-pie-chart-alt icon'></i>
+              <span class="text nav-text">Forcast</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-heart icon'></i>
+              <span class="text nav-text">Contact</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-wallet icon'></i>
+              <span class="text nav-text">Blog</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <!-- <li class="">
+                  <a href="#">
+                      <i class='bx bx-log-out icon' ></i>
+                      <span class="text nav-text">Logout</span>
+                  </a>
+              </li> -->
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon" alt="" />
+            <p>92 Cherry Drive Uniondale, NY 11553</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon" alt="" />
+            <p>lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone.png" class="icon" alt="" />
+            <p>123-456-789</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="contscript.js"></script>
+
+  <script>
+    const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            modeText.innerText = "Light mode";
+        } else {
+            modeText.innerText = "Dark mode";
+
+        }
+    });
+</script>
+
+</body>
+
+</html>

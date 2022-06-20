@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        .box1 {
+            display: flex;
+            /* background-color: red; */
+            background-color: rgb(221, 213, 213);
+            width: 400px;
+            height: 265px;
+            position: absolute;
+            top: 160px;
+            left: 100px;
+            border: 5px solid white;
+            border-radius: 40px;
+            flex-direction: row;
+            box-shadow: 3px 3px 2px 1px rgba(54, 54, 58, 0.2);
+            transition: 0.6s;
+        }
+
+        .box1:hover {
+            box-shadow: 20px 20px 15px rgba(0, 0, 0, .3);
+            transform: scale(1.05);
+            /* box-shadow: 60px -16px teal; */
+            transition: 0.6s;
+        }
+
+        body.dark .home .box1:hover {
+            box-shadow: 20px 20px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .trac {
+            position: relative;
+            top: 50px;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 20px;
+            border-color: black;
+        }
+
+        .item {
+            position: absolute;
+            left: 30px;
+
+        }
+
+        .btn {
+            position: relative;
+            bottom: -50px;
+            border: 0cm;
+            border-radius: 15px;
+            padding: 30px 5;
+            color: #695CFE;
+            font-weight: bolder;
+            top: -10px;
+        }
+
+        .btn:hover {
+            background-color: rgb(218, 133, 72);
+            color: #DDD;
+            box-shadow: 8px 8px 2px 1px rgba(56, 56, 58, 0.2);
+            transition: 0.6s;
+        }
+
+        .star_rating {
+            user-select: none;
+        }
+
+        .star {
+            top: -500px;
+            font-size: 1.5rem;
+            color: #ff9800;
+            background-color: unset;
+            border: none;
+            margin-top: -50px;
+            bottom: -50px;
+            height: 5px;
+        }
+
+        .hp {
+            display: flex;
+            flex-direction: row;
+            padding-right: 80px;
+            top: -5px;
+            position: relative;
+            height: 50px;
+        }
+
+        .loc {
+            display: flex;
+            flex-direction: row;
+            padding-right: 80px;
+            top: -20px;
+            position: relative;
+            bottom: 30px;
+            height: 30px;
+        }
+
+        .x {
+            position: relative;
+            top: -15px;
+            right: -8px;
+        }
+
+        .b1 {
+            position: relative;
+            top: 25px;
+        }
+
+        .b2 {
+            position: relative;
+            left: 550px;
+            top: -245px;
+        }
+
+        .b3 {
+            position: relative;
+            left: 1010px;
+            top: -520px;
+        }
+
+        .b4 {
+            position: relative;
+            top: -460px;
+        }
+
+        .b5 {
+            position: relative;
+            left: 550px;
+            top: -730px;
+        }
+
+        .b6 {
+            position: relative;
+            left: 1010px;
+            top: -1005px;
+        }
+
+        .price {
+            height: 30px;
+        }
+        .main_btn{
+            background-color: #ff9800;
+            border-radius: 15px;
+            width: 50px;
+            height: 50px;
+        }
+        .main_btn:hover {
+            background-color: rgb(218, 133, 72);
+            color: #DDD;
+            box-shadow: 8px 8px 2px 1px rgba(56, 56, 58, 0.2);
+            transition: 0.6s;
+        }
+    </style>
+</head>
+
+<body style="background-color: #d5d3f8">
+
+    
+    <div class="container">
+    <button class="main_btn">Back</button>
+    <h1>Buy/Rent</h1>
+        <div class="box1 b1">
+
+            <div>
+                <h2 class="item">Tractor</h2>
+                <img class="trac" src="resources/trac.jfif" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>John Deer 5205</h2>
+
+                <div class="hp">
+                    <img src="resources/lightning.png" alt="" height="30px" width="30px">
+                    <h3 class="x">50hp</h3>
+                </div>
+                <div class="loc">
+                    <img src="resources/location.png" alt="" height="30px" width="30px">
+                    <h3 class="x">Haryana</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                </div>
+                </p>
+                <h3 class="price"> Rent Price : ₹700/hr</h3>
+                </p>
+
+                <button class="btn" style="font-size: larger;">RENT NOW</button>
+            </div>
+        </div>
+
+        <div class="box1 b2">
+
+            <div>
+                <h2 class="item">Tractor</h2>
+                <img class="trac" src="resources/eicher.jpg" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>Echier 5200</h2>
+
+                <div class="hp">
+                    <img src="resources/lightning.png" alt="" height="30px" width="30px">
+                    <h3 class="x">52hp</h3>
+                </div>
+                <div class="loc">
+                    <img src="resources/location.png" alt="" height="30px" width="30px">
+                    <h3 class="x">Uttrakhand</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                </div>
+                </p>
+                <h3 class="price"> Rent Price : ₹700/hr</h3>
+                </p>
+
+
+                <button class="btn" style="font-size: larger;">RENT NOW</button>
+            </div>
+        </div>
+
+        <div class="box1 b3">
+
+            <div>
+                <h2 class="item">Tractor</h2>
+                <img class="trac" src="resources/kubota.png" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>Kubota MU5501</h2>
+
+                <div class="hp">
+                    <img src="resources/lightning.png" alt="" height="30px" width="30px">
+                    <h3 class="x">48hp</h3>
+                </div>
+                <div class="loc">
+                    <img src="resources/location.png" alt="" height="30px" width="30px">
+                    <h3 class="x">Punjab</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                </div>
+                </p>
+                <h3 class="price"> Rent Price : ₹700/hr</h3>
+                </p>
+
+
+                <button class="btn" style="font-size: larger;">RENT NOW</button>
+            </div>
+        </div>
+
+
+        <div class="box1 b4">
+            <div>
+                <h2 class="item">Tools</h2>
+                <img class="trac" src="resources/shovel1.jpg" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>Shovel</h2>
+
+                <div class="hp">
+                    <img src="resources/membrane.png" alt="" height="30px" width="30px">
+                    <h3 class="x">steel</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                </div>
+
+                <h3> Price : ₹500</h3>
+                </p>
+
+                <button class="btn" style="font-size: larger;">BUY NOW</button>
+            </div>
+        </div>
+
+        <div class="box1 b5">
+
+            <div>
+                <h2 class="item">Tools</h2>
+                <img class="trac" src="resources/hoe.jpg" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>Hoe</h2>
+
+                <div class="hp">
+                    <img src="resources/membrane.png" alt="" height="30px" width="30px">
+                    <h3 class="x">iron</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                    <button class="star s0">&#9734</button>
+                </div>
+
+                <h3> Price : ₹300</h3>
+                </p>
+
+                <button class="btn" style="font-size: larger;">BUY NOW</button>
+            </div>
+        </div>
+
+
+        <div class="box1 b6">
+            <div>
+                <h2 class="item">Tools</h2>
+                <img class="trac" src="resources/tool.jpg" alt="loading failed" height="140px" width="150px">
+            </div>
+
+            <div class="para">
+                <p>
+                <h2>Hand Tools</h2>
+
+                <div class="hp">
+                    <img src="resources/membrane.png" alt="" height="30px" width="30px">
+                    <h3 class="x">aluminium</h3>
+                </div>
+
+                <div class="star_rating">
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                </div>
+
+                <h3> Price : ₹300</h3>
+                </p>
+
+                <button class="btn" style="font-size: larger;">BUY NOW</button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

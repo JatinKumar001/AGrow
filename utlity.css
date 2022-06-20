@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Ubuntu&display=swap');
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+.fn{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+.fn-1{
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fn-2{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+.fn-3{
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+    color: rgb(236, 235, 235);
+}
+
+.small-line{
+    margin: auto;
+    width: 320px;
+    background-color: white;
+    height: 0.3vh;
+}
+
+.background-light{
+    background: rgba(0, 0, 0, 0.7) url('../img/backgoundimg.jpeg');
+    opacity: 0.6;
+}
